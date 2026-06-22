@@ -1,0 +1,20 @@
+/* CSS simples (versão corrigida) */
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 16px; line-height: 1.4; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+header img { max-width: 140px; height: auto; }
+nav ul { list-style: none; padding: 0; margin: 0 0 12px 0; display: flex; flex-wrap: wrap; gap: 12px; }
+nav a { text-decoration: none; }
+main { max-width: 980px; }
+.cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; }
+.card img { width: 100%; height: auto; border-radius: 6px; }
+form { display: grid; gap: 10px; max-width: 520px; }
+label { font-weight: bold; }
+input, select, button { padding: 10px; }
+button { cursor: pointer; }
+footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid #ccc; }
+
+@media (min-width: 800px) {
+  .cards { grid-template-columns: 1fr 1fr; }
+}
