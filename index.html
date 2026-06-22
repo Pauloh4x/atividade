@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conrec University — Página Inicial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="imagens/logo_site.png" alt="Logotipo da Conrec University"> <!--bug caminho da imagem/ pronto-->
+    <div>
+      <h2>Conrec University</h2> <!--bug fechamento incorreto tag/ ponto-->
+      <p>Faculdade de Tecnologia</p>
+    </div>
+  </header>
+
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="paginas/sobre.html">Sobre</a></li>
+      <li><a href="paginas/servicos.html">Serviços</a></li>
+      <li><a href="paginas/eventos.html">Eventos</a></li> <!--bug caminho da página/ pronto-->
+      <li><a href="paginas/contato.html">Contato</a></li>
+      <li><a href="#rodape">Rodapé</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p>
+      Bem-vindo ao nosso site! Aqui você encontra informações sobre cursos, projetos e novidades.
+    </p>
+
+    <section aria-labelledby="destaques">
+      <h2 id="destaques">Destaques</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Laboratórios</h3>
+          <img src="imagens/lab.png" alt="Foto ilustrativa de um laboratório de informática">
+          <p>Ambientes modernos para prática. <a href="paginas/sobre.html">Saiba mais</a></p> <!--bug caminho da pagina-->
+        </article>
+
+        <article class="card">
+          <h3>Eventos</h3>
+          <img src="imagens/eventos.png" alt="Imagem ilustrativa de eventos acadêmicos"> <!--bug caminho da imagem-->
+          <p>Seminários, maratonas e encontros. <a href="paginas/eventos.html">Ver eventos</a></p> 
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="interesse">
+      <h2 id="interesse">Formulário de interesse</h2>
+
+      <form action="#" method="GET">
+        <div>
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div>
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" required> <!--bug no tipo de entrada do campo-->
+        </div>
+
+        <div>
+          <label for="curso">Curso:</label><br> <!--bug na quebra de linha-->
+          <select id="curso" name="curso" required>
+            <option value="" selected disabled>Selecione...</option>
+            <option value="cc">Ciência da Computação</option>
+            <option value="si">Sistemas de Informação</option>
+            <option value="eng">Engenharia</option>
+          </select>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <p>© 2026 Conrec University — Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
